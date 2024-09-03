@@ -121,8 +121,6 @@ export const getSelect = (
             ? resolveFragments(field.selectionSet.selections, info)
             : [];
 
-        console.log(as, model.name, model.fields, field.selectionSet.selections, selections);
-
         select[as] =
             selections.length > 0
                 ? {
